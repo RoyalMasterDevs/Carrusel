@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Total Security</title>
+</head>
+<header>
+    <div class="nav">
+        <div class="logo">
+            <img src="./img/Logo_Negro_Rojo.svg" alt="Logo_Negro_Rojo">
+
+        </div>
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="hamburger" id="nav">
+                <ul>
+                    <li><a href="#proyectos">Servicios</a></li>
+                    <li><a href="#footer">Nosotros</a></li>
+                    <li><a href="https://totalsecurity.mx/Blog/">Blog</a></li>
+                    <li><a href="#clientes">Proyectos</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="https://barras-designs.com.mx/tvirtual/TotalSecurity/">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="menuLink text-style-underline"><a href="#proyectos">Servicios</a></li>
+                <li class="menuLink text-style-underline"><a href="#footer">Nosotros</a></li>
+                <li class="menuLink text-style-underline"><a href="https://totalsecurity.mx/Blog/">Blog</a></li>
+                <li class="menuLink text-style-underline"><a href="#clientes">Proyectos</a></li>
+                <li class="menuLink text-style-underline"><a href="#cursos">Cursos</a></li>
+                <li>
+
+                    <a class="btnContacto" href="https://barras-designs.com.mx/tvirtual/TotalSecurity/">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <!-- CHAT -->
+            <div class="chat">
+                <li class="chat__link">
+                    <a class="chat__a" href="https://wa.me/+5218183660443">
+
+                        <i><svg xmlns="http://www.w3.org/2000/svg"
+                                class="chat__icon icon icon-tabler icon-tabler-brand-hipchat" width="44" height="44"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M17.802 17.292s.077 -.055 .2 -.149c1.843 -1.425 3 -3.49 3 -5.789c0 -4.286 -4.03 -7.764 -9 -7.764c-4.97 0 -9 3.478 -9 7.764c0 4.288 4.03 7.646 9 7.646c.424 0 1.12 -.028 2.088 -.084c1.262 .82 3.104 1.493 4.716 1.493c.499 0 .734 -.41 .414 -.828c-.486 -.596 -1.156 -1.551 -1.416 -2.29z" />
+                                <path d="M7.5 13.5c2.5 2.5 6.5 2.5 9 0" />
+                            </svg></i>
+                    </a>
+                </li>
+            </div>
+            <!-- CARRUSEL -->
+            <section id="servicios">
+                <div class="carousel">
+                    <ul class="slides">
+                        <!-- CARRUSEL 1 -->
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                            <div class="slide-image fade">
+                                <img src="./img/carrusel/1.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- CARRUSEL 2 -->
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                            <div class="slide-image fade">
+                                <img src="./img/carrusel/2.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- CARRUSEL 3 -->
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                            <div class="slide-image fade">
+                                <img src="./img/carrusel/3.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- CARRUSEL 4 -->
+                        <input type="radio" name="radio-buttons" id="img-4" />
+                        <li class="slide-container">
+                            <div class="slide-image fade">
+                                <img src="./img/carrusel/4.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- CARRUSEL 5 -->
+                        <input type="radio" name="radio-buttons" id="img-5" />
+                        <li class="slide-container">
+                            <div class="slide-image fade">
+                                <img src="./img/carrusel/5.png">
+                            </div>
+                            <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <span class="carousel-dot" onclick="changeSlideByButton(1)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(2)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(3)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(4)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(5)"></span>
+                            
+
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECCION LOGOS -->
+            <!-- <section> -->
+
+            <!-- </section> -->
+            <!-- NUESTROS CLIENTES -->
+            <section id="clientes" class="contClientes">
+                <div class="carrusel">
+                    <div class="carrusel-slide">
+
+                        <img src="./img/señorlatino.png" alt="seniorlatino">
+                        <img src="./img/Quality.png" alt="quality">
+                        <img src="./img/zubex.png" alt="zubex">
+                        <img src="./img/hammond.png" alt="hammond">
+                        <img src="./img/evans.png" alt="evans">
+                        <img src="./img/promotoraambiental.png" alt="ambiental">
+                        <img src="./img/lm.png" alt="lm">
+                        <img src="./img/qualtia.png" alt="qualtia">
+                    </div>
+                    <div class="carrusel-slide">
+
+                        <img src="./img/señorlatino.png" alt="seniorlatino">
+                        <img src="./img/Quality.png" alt="quality">
+                        <img src="./img/zubex.png" alt="zubex">
+                        <img src="./img/hammond.png" alt="hammond">
+                        <img src="./img/evans.png" alt="evans">
+                        <img src="./img/promotoraambiental.png" alt="ambiental">
+                        <img src="./img/lm.png" alt="lm">
+                        <img src="./img/qualtia.png" alt="qualtia">
+                    </div>
+                </div>
+                <div class="titulo1">
+
+                    <h2>Nuestros Clientes</h2>
+                </div>
+                <div class="titulo1__texto">
+
+                    <p>Nuestra atención personalizada, experiencia en el sector y compromiso con la excelencia nos han
+                        <br>
+                        convertido en el socio de confianza para numerosos hogares, negocios e industrias.
+                    </p>
+                </div>
+            </section>
+
+            <!-- PROYECTOS -->
+            <section class="contProyectos" id="proyectos">
+                <div class="title2">
+                    <a class="btnContacto--proyectos" href="#">Proyectos</a>
+                </div>
+                <div class="proyectos">
+                    <div class="proyectos__item">
+                        <img class="proyectos__icon" src="./img/consultoria.svg" alt="consultoria">
+                        <div class="proyectos__text">
+                            <h3>Ingeniería y Consultoría de Seguridad</h3>
+                            <p>Contamos con un equipo de expertos que realiza un análisis exhaustivo de tus necesidades
+                                de seguridad. Desde inspecciones iniciales hasta la implementación de soluciones, te
+                                guiamos en cada paso para garantizar la protección adecuada de tu hogar o negocio.</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="proyectos__item">
+                        <img class="proyectos__icon" src="./img/monitoreo.svg" alt="monitoreo">
+                        <div class="proyectos__text">
+                            <h3>Monitoreo 24h</h3>
+                            <p>Con un monitoreo constante las 24 horas, los 7 días de la semana, puedes estar seguro de
+                                que tu seguridad nunca descansa. Ante cualquier señal de alarma, actuamos de inmediato
+                                para mantener tu tranquilidad. </p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="proyectos__item">
+                        <img class="proyectos__icon" src="./img/perimetrales.svg" alt="perimetrales">
+                        <div class="proyectos__text">
+                            <h3>Protecciones Perimetrales</h3>
+                            <p>Tu protección, nuestro compromiso. Nuestros expertos instalarán un panel de control de
+                                vanguardia, sensores de movimiento y contactos de puertas y ventanas estratégicamente
+                                ubicados, y un comunicador confiable. Además, integramos tecnología inalámbrica de
+                                última generación para garantizar que tu sistema esté siempre conectado y funcione sin
+                                problemas.</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="proyectos__item">
+                        <img class="proyectos__icon" src="./img/acceso.svg" alt="acceso">
+                        <div class="proyectos__text">
+                            <h3>Control de Acceso</h3>
+                            <p>La seguridad comienza en la puerta. Con nuestros sistemas de control de acceso, puedes
+                                estar seguro de que solo las personas autorizadas tienen acceso a tu propiedad.
+                                Ofrecemos soluciones que incluyen reconocimiento facial, registros de entradas y
+                                salidas, y controles de seguridad personalizados.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="proyectos__item">
+                        <img class="proyectos__icon" src="./img/protecciones.svg" alt="cctv">
+                        <div class="proyectos__text">
+                            <h3>Protecciones Perimetrales</h3>
+                            <p>La visión que necesitas para la tranquilidad total. Nuestros sistemas de circuito cerrado
+                                cuentan con una variedad de cámaras, desde cámaras PTZ que pueden seguir automáticamente
+                                el movimiento hasta cámaras discretas que capturan cada detalle. Mantén un ojo en tus
+                                espacios en tiempo real y accede a grabaciones cuando lo necesites.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="proyectos__item">
+                        <img class="proyectos__icon" src="./img/publicidad.svg" alt="publicidad">
+                        <div class="proyectos__text">
+                            <h3>Publicidad Digital</h3>
+                            <p>Haz que tu negocio brille con nuestras soluciones de publicidad digital. Desde pantallas
+                                LED interiores hasta displays de vanguardia en exteriores, te ayudamos a aumentar tu
+                                visibilidad. Además, ofrecemos servicios de diseño de gráficos personalizados para
+                                destacar tu mensaje en el mundo digital.</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BLOG -->
+            <section>
+
+                <div class="blog">
+                    <div class="blog__title">
+                        <h2>Últimos Posts</h2>
+
+                    </div>
+                    <div id="blog__body">
+                        <!-- El contenido del feed RSS se cargará aquí -->
+                    </div>
+                    <div class="btn--verTodos">
+
+                        <a href="https://totalsecurity.mx/Blog/category/generales/">Ver Todos</a>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog__footer--title">
+
+                            <h2 style="font-weight: 400;">SUSCRÍBETE A <br><span style="font-weight: 700;">NUESTRO
+                                    BLOG</span></h2>
+                        </div>
+                        <!-- <div class="blog__footer--form">
+                            <form action="">
+                                <div class="datos--form1">
+
+
+                                    <label for="nombre">Tu Nombre</label>
+                                    <input type="text" id="nombre" tabindex="2" minlength="5" required>
+                                    <label for="email" >Tu Email</label>
+                                    <input type="email" id="email" tabindex="2" minlength="5" required>
+                                    <div class="politica">
+
+                                        <input type="checkbox" id="politica">
+                                        <label for="politica">Acepto la <a href="#" style="color: red;">política de
+                                                privacidad</a></label>
+                                    </div>
+                                </div>
+                                <div class="btnContacto--form1">
+
+                                    <button type="sumbit">¡ME APUNTO!</button>
+                                </div>
+                            </form>
+
+                        </div> -->
+                        <div class="btnContacto--form1">
+
+                            <a href="https://totalsecurity.mx/Blog/newsletter/">¡ME APUNTO!</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <section class="contCotiza" id="cotizacion">
+            <div class="candado">
+                <div class="contenido-candado">
+
+
+                    <!-- Formulario Cotizacion -->
+                    <div class="form2">
+                        <!-- <h2>¡Cotiza Ahora!</h2> -->
+                        <fieldset class="form2__fieldset">
+                            <legend class="form2__head">
+                                <h2>¡Cotiza Ahora!</h2>
+                            </legend>
+
+                            <p>Llena el formulario a continuación compártenos los detalles de tus necesidades <br>
+                            </p>
+                            <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
+
+                            <form method="POST" class="form2__inputs" action="./contacto.php" id="formulario">
+                                <!-- <label for="nombre"></label> -->
+                                <input class="form2__item" type="text" name="name" placeholder="*Nombre">
+                                <input class="form2__item" type="text" name="apellido" placeholder="*Apellido">
+                                <input class="form2__item" type="email" name="mail" placeholder="*Email">
+                                <input class="form2__item" type="number" name="phone" placeholder="*Teléfono">
+                                <input class="form2__item" type="text" name="proyecto" placeholder="*Tipo de proyecto">
+                                <input class="form2__item" name="presupuesto" type="number" placeholder="*Presupuesto">
+                                <textarea name="message" class="form2__item" cols="60" rows="10"
+                                    placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
+
+                                <button class="btnContacto--form2" id="envia" type="submit">Enviar</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <footer id="footer">
+            <div class="footer__enlaces">
+
+                <div class="footer__item">
+                    <!-- <div class="footer__logo">
+                    </div> -->
+                    <div class="footer__head">
+                        <img class="logoFooter" src="./img/Logo_Blanco.svg" alt="logoBlanco">
+
+                    </div>
+                    <div class="footer__body">
+
+                        <p>Somos una empresa de seguridad
+                            electrónica en Nuevo León. Nuestro
+                            compromiso es garantizarla
+                            tranquilidad y confianza de nuestros
+                            clientes.</p>
+                        <p>Trabajamos de la mano contigo para
+                            entender tus necesidades específicas
+                            y diseñar estrategias de seguridad
+                            personalizadas que se adapten a tu
+                            entorno y presupuesto</p>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__head">
+                        <h2>Secciones destacadas</h2>
+
+                    </div>
+                    <div class="footer__body">
+                        <ul>
+                            <li>Publicidad Digital</li>
+                            <li>Monitoreo 24h</li>
+                            <li>Sistemas de CCTV</li>
+                            <li>Control de Acceso</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__head">
+                        <h2>Últimos posts</h2>
+
+                    </div>
+                    <div class="footer__body">
+                        <ul id="footer_titulos">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__head">
+                        <h2>Info de contacto</h2>
+
+                    </div>
+                    <div class="footer__body">
+                        <ul>
+                            <li class="footer__link"><i><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-map-pin" width="36" height="36"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                        <path
+                                            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                    </svg></i>Gral.PlutarcoElíasCalles311
+                                Azteca,67150Guadalupe,N.L.</li>
+                            <li class="footer__link"><i><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-phone" width="36" height="36"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                    </svg></i>(81)83670017</li>
+                            <li class="footer__link"><i><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-mail" width="36" height="36"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                        <path d="M3 7l9 6l9 -6" />
+                                    </svg></i>hola@totalsecurity.mx</li>
+
+                            <li class="footer__link"><i><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-file-cv" width="36" height="36"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                        <path
+                                            d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                        <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+                                        <path d="M13 11l1.5 6l1.5 -6" />
+                                    </svg></i>cv@oinkmygod.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <div class="footer__bottom--1">
+                    <h4 class="bottom1__item"><a href=""> Total Security ©</a></h4>
+                    <h5 class="bottom1__item"><a href="">Avisos</a></h5>
+                    <h5 class="bottom1__item"><a href="">Política de privacidad</a></h5>
+                    <h5 class="bottom1__item"><a href="">Política de cookies</a></h5>
+                </div>
+            </div>
+            <div class="footer__bottom--2">
+                <ul class="bottom__enlaces--2">
+                    <li>
+                        <a href="https://www.facebook.com/TSMonterrey/">
+                            <i><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon--enlaces icon icon-tabler icon-tabler-brand-facebook" width="28"
+                                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/total.security.mx/"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon--enlaces icon icon-tabler icon-tabler-brand-instagram" width="28"
+                                height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/totalsecuritymty/"><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon--enlaces icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 11l0 5" />
+                                <path d="M8 8l0 .01" />
+                                <path d="M12 16l0 -5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@totalsecuritymx"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon--enlaces icon icon-tabler icon-tabler-brand-tiktok" width="28" height="28"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+    
+</body>
+
+</html>
